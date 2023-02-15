@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useGetData = (url) => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({});
     const [loading, setLoading] = useState(true)
     
     useEffect(() =>{
