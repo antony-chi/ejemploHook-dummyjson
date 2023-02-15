@@ -16,7 +16,8 @@ export const useGetData = (url) => {
 
     return {
         data,
-        loading
+        loading,
+        setData
     };
 }
          /* aplicado Async / await*/

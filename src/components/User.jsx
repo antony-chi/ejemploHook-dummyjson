@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function User ({username, image, email, id }){
+export default function User ({username, image, email, id, firstName, lastName }){
 
     return (
             <Link className="text-decoration-none" to={`/user/${id}`}>
@@ -8,6 +8,7 @@ export default function User ({username, image, email, id }){
                     <img className="card-img-top" src={image} alt={username} />
                     <div className="card-body">
                         <h2 className="card-title">{username}</h2>
+                        <p>{firstName} {lastName}</p>
                         <p className="card-text">{email}</p>
                     </div>
                 </div>
